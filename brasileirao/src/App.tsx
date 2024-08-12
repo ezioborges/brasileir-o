@@ -1,12 +1,26 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>Iniciando os estudos</h1>
+    <div className='login-content' >
+      <label htmlFor="email-id">
+        Email: 
+        <input
+          id="email-id"
+          type="email"
+          className='input-form'
+          />
+      </label>
+      <label htmlFor='password-id'>
+        Senha:
+        <input
+          type="password"
+          className='input-form'
+          id='password-id'
+          />
+      </label>
+      <input type="button" value={ 'Entrar' } className='input-button' />
     </div>
   )
 }
